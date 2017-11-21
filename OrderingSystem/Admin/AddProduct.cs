@@ -46,33 +46,7 @@ namespace OrderingSystem.Admin
         
         private void AddBtn_Click(object sender, EventArgs e)
         {
-            if (checkInputs() == false)
-            {
-                MessageBox.Show("One or more textfields contain an invalid character!");
-            }
-            else
-            {
-                byte[] img = addImage();
-                string productName = productNameField.Text;
-                double price = Convert.ToDouble(productPriceField.Text);
-                int stock = Convert.ToInt32(productStockField.Text);
-                string productCategory = productCategoryComboBox.Text;
-                Boolean confirm = pdc.addProduct(img, productName, price, stock, productCategory);
 
-                if (confirm)
-                {
-                    MessageBox.Show("Data added to database successfully!");
-                    productNameField.Text = "";
-                    productPriceField.Text = "";
-                    productStockField.Text = "";
-                    pm.loadDatabase();
-                }
-                else
-                {
-                    MessageBox.Show("Data was not sent to database!");
-                }
-                
-            }
         }
 
         private Boolean checkInputs()
@@ -141,6 +115,65 @@ namespace OrderingSystem.Admin
                 return ms.ToArray();
             }
 
+        }
+
+        private void AddProduct_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClick(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            string sbtn = btn.Name;
+
+            switch (sbtn)
+            {
+                case "btnAdd":
+                    if (checkInputs() == false)
+                    {
+                        MessageBox.Show("One or more textfields contain an invalid character!");
+                    }
+                    else
+                    {
+                        byte[] img = addImage();
+                        string productName = productNameField.Text;
+                        double price = Convert.ToDouble(productPriceField.Text);
+                        int stock = Convert.ToInt32(productStockField.Text);
+                        string productCategory = productCategoryComboBox.Text;
+                        Boolean confirm = pdc.addProduct(img, productName, price, stock, productCategory);
+
+                        if (confirm)
+                        {
+                            MessageBox.Show("Data added to database successfully!");
+                            productNameField.Text = "";
+                            productPriceField.Text = "";
+                            productStockField.Text = "";
+                            pm.loadDatabase();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Data was not sent to database!");
+                        }
+
+                    }
+                    break;
+                case "btnReset":
+                    resetAllFields();
+                    break;
+                default:
+                    //MessageBox.Show("The event is : " + e.GetType().ToString());
+                    break;
+            }
+
+        }
+        private void resetAllFields()
+        {
+            productCategoryComboBox.Text = "";
+            productNameField.Text = "";
+            productPriceField.Text = "";
+            productStockField.Text = "0";
+            productPictureBox.Image = Image.FromFile("default");
         }
 
     }

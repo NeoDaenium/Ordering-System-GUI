@@ -1,0 +1,17 @@
+C:\Users\Janda\Desktop\OrderingSystem-master\OrderingSystem\bin\Debug\OrderingSystem.exe.config
+C:\Users\Janda\Desktop\OrderingSystem-master\OrderingSystem\bin\Debug\Database\ProgramDatabase.mdf
+C:\Users\Janda\Desktop\OrderingSystem-master\OrderingSystem\bin\Debug\Database\ProgramDatabase_log.ldf
+C:\Users\Janda\Desktop\OrderingSystem-master\OrderingSystem\bin\Debug\OrderingSystem.exe
+C:\Users\Janda\Desktop\OrderingSystem-master\OrderingSystem\bin\Debug\OrderingSystem.pdb
+C:\Users\Janda\Desktop\OrderingSystem-master\OrderingSystem\bin\Debug\DatabaseController.dll
+C:\Users\Janda\Desktop\OrderingSystem-master\OrderingSystem\bin\Debug\DatabaseController.pdb
+C:\Users\Janda\Desktop\OrderingSystem-master\OrderingSystem\obj\Debug\OrderingSystem.csprojResolveAssemblyReference.cache
+C:\Users\Janda\Desktop\OrderingSystem-master\OrderingSystem\obj\Debug\OrderingSystem.Account.Register.resources
+C:\Users\Janda\Desktop\OrderingSystem-master\OrderingSystem\obj\Debug\OrderingSystem.Admin.AddProduct.resources
+C:\Users\Janda\Desktop\OrderingSystem-master\OrderingSystem\obj\Debug\OrderingSystem.Admin.CustomerList.resources
+C:\Users\Janda\Desktop\OrderingSystem-master\OrderingSystem\obj\Debug\OrderingSystem.Admin.ProductManagement.resources
+C:\Users\Janda\Desktop\OrderingSystem-master\OrderingSystem\obj\Debug\OrderingSystem.Form1.resources
+C:\Users\Janda\Desktop\OrderingSystem-master\OrderingSystem\obj\Debug\OrderingSystem.Properties.Resources.resources
+C:\Users\Janda\Desktop\OrderingSystem-master\OrderingSystem\obj\Debug\OrderingSystem.csproj.GenerateResource.Cache
+C:\Users\Janda\Desktop\OrderingSystem-master\OrderingSystem\obj\Debug\OrderingSystem.exe
+C:\Users\Janda\Desktop\OrderingSystem-master\OrderingSystem\obj\Debug\OrderingSystem.pdb

@@ -48,21 +48,10 @@ namespace OrderingSystem.Admin
 
         public void loadDatabase()
         {
-            bs.DataSource = pdc.viewAllData("SP_VIEWALLPRODUCTDATA").Tables[0];
+            //bs.DataSource = pdc.viewAllData("SP_VIEWALLPRODUCTDATA").Tables[0];
             productListGridView.DataSource = bs;
         }
 
-        private void EditBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AddBtn_Click(object sender, EventArgs e)
-        {
-            AddProduct goToAddProduct = new AddProduct();
-            GlobalClass.CheckMdiChildren(goToAddProduct);
-            loadDatabase();
-        }
         private void productListGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -93,7 +82,43 @@ namespace OrderingSystem.Admin
             catch (Exception openFileDialogException)
             {
                 MessageBox.Show(openFileDialogException.Message);
-            }   
+            }
+        }
+
+        private void btnClick(object sender, EventArgs e)//Add button actions here! :D
+        {
+            Button btn = sender as Button;
+            string sbtn = btn.Name;
+
+            switch (sbtn)
+            {
+                case "btnEdit":
+                cbxProductManager.Text = "Edit a Selected Product";
+
+                break;
+                case "btnAdd":
+                cbxProductManager.Text = "Add a New Product";
+                AddProduct goToAddProduct = new AddProduct();
+                GlobalClass.CheckMdiChildren(goToAddProduct);
+                loadDatabase();
+                break;
+                case "btnReset":
+                resetAllFields();
+
+                break;
+                default:
+                    //MessageBox.Show("The event is : " + e.GetType().ToString());
+                    break;
+            }
+        }
+
+        private void resetAllFields()
+        {
+            productCategoryComboBox.Text = "";
+            productNameField.Text = "";
+            productPriceField.Text = "";
+            productStockField.Text = "0";
+            //productPictureBox.Image = Image. Reset the image to default ?
         }
     }
 }

@@ -1,0 +1,5 @@
+C:\Users\Janda\Desktop\OrderingSystem-master\DatabaseController\bin\Debug\DatabaseController.dll
+C:\Users\Janda\Desktop\OrderingSystem-master\DatabaseController\bin\Debug\DatabaseController.pdb
+C:\Users\Janda\Desktop\OrderingSystem-master\DatabaseController\obj\Debug\DatabaseController.csprojResolveAssemblyReference.cache
+C:\Users\Janda\Desktop\OrderingSystem-master\DatabaseController\obj\Debug\DatabaseController.dll
+C:\Users\Janda\Desktop\OrderingSystem-master\DatabaseController\obj\Debug\DatabaseController.pdb

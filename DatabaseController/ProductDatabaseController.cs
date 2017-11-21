@@ -30,14 +30,14 @@ namespace DatabaseController
 
         //Accomodates all SELECT * FROM stored procedures.
         
-        public DataSet viewAllData(string storedProcedure)
-        {
+        public void/*DataSet*/ viewAllData(string storedProcedure)
+        {/*
             DataSet ds = new DataSet();
             ds.Clear();
             SqlDataAdapter addContent = queryRequest(storedProcedure);
             addContent.Fill(ds, storedProcedure);
             return ds;
-        }
+        */}
 
         public SqlDataAdapter queryRequest(string sqlStoredProcedure)
         {
