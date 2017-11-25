@@ -44,6 +44,7 @@
             this.lblprprice = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.productListGridView = new System.Windows.Forms.DataGridView();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.cbxProductManager.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productStockField)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productPictureBox)).BeginInit();
@@ -53,6 +54,7 @@
             // cbxProductManager
             // 
             this.cbxProductManager.BackColor = System.Drawing.Color.Transparent;
+            this.cbxProductManager.Controls.Add(this.btnCancel);
             this.cbxProductManager.Controls.Add(this.productStockField);
             this.cbxProductManager.Controls.Add(this.productPictureBox);
             this.cbxProductManager.Controls.Add(this.productNameField);
@@ -77,9 +79,10 @@
             // 
             // productStockField
             // 
+            this.productStockField.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productStockField.Location = new System.Drawing.Point(180, 165);
             this.productStockField.Name = "productStockField";
-            this.productStockField.Size = new System.Drawing.Size(105, 39);
+            this.productStockField.Size = new System.Drawing.Size(105, 33);
             this.productStockField.TabIndex = 0;
             // 
             // productPictureBox
@@ -105,13 +108,13 @@
             // 
             // btnReset
             // 
-            this.btnReset.BackColor = System.Drawing.Color.Chocolate;
+            this.btnReset.BackColor = System.Drawing.Color.Firebrick;
             this.btnReset.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReset.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.Location = new System.Drawing.Point(306, 166);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(180, 39);
+            this.btnReset.Size = new System.Drawing.Size(97, 39);
             this.btnReset.TabIndex = 4;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = false;
@@ -122,10 +125,10 @@
             this.btnEdit.BackColor = System.Drawing.Color.Chocolate;
             this.btnEdit.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Location = new System.Drawing.Point(492, 166);
+            this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.Location = new System.Drawing.Point(409, 165);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(183, 39);
+            this.btnEdit.Size = new System.Drawing.Size(115, 39);
             this.btnEdit.TabIndex = 5;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -142,11 +145,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(301, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 30);
+            this.label1.Size = new System.Drawing.Size(142, 25);
             this.label1.TabIndex = 13;
             this.label1.Text = "Product Name: ";
             // 
@@ -166,44 +169,44 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(8, 38);
+            this.label5.Location = new System.Drawing.Point(8, 47);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(166, 30);
+            this.label5.Size = new System.Drawing.Size(151, 25);
             this.label5.TabIndex = 12;
             this.label5.Text = "Product Picture: ";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(301, 126);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(185, 30);
+            this.label4.Size = new System.Drawing.Size(168, 25);
             this.label4.TabIndex = 9;
             this.label4.Text = "Product Category: ";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(8, 170);
+            this.label6.Location = new System.Drawing.Point(8, 172);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(151, 30);
+            this.label6.Size = new System.Drawing.Size(136, 25);
             this.label6.TabIndex = 10;
             this.label6.Text = "Product Stock: ";
             // 
             // lblprprice
             // 
             this.lblprprice.AutoSize = true;
-            this.lblprprice.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblprprice.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblprprice.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblprprice.Location = new System.Drawing.Point(301, 82);
             this.lblprprice.Name = "lblprprice";
-            this.lblprprice.Size = new System.Drawing.Size(141, 30);
+            this.lblprprice.Size = new System.Drawing.Size(129, 25);
             this.lblprprice.TabIndex = 10;
             this.lblprprice.Text = "Product Price:";
             // 
@@ -233,6 +236,20 @@
             this.productListGridView.ReadOnly = true;
             this.productListGridView.Size = new System.Drawing.Size(690, 277);
             this.productListGridView.TabIndex = 0;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.Color.Firebrick;
+            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.SeaShell;
+            this.btnCancel.Location = new System.Drawing.Point(530, 166);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(145, 39);
+            this.btnCancel.TabIndex = 16;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // ProductManagement
             // 
@@ -271,6 +288,7 @@
         private System.Windows.Forms.DataGridView productListGridView;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnCancel;
 
     }
 }

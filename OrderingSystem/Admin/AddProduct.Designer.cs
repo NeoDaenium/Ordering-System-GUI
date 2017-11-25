@@ -43,6 +43,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.lblprprice = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.cbxProductManager.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productStockField)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productPictureBox)).BeginInit();
@@ -51,6 +52,7 @@
             // cbxProductManager
             // 
             this.cbxProductManager.BackColor = System.Drawing.Color.Transparent;
+            this.cbxProductManager.Controls.Add(this.btnCancel);
             this.cbxProductManager.Controls.Add(this.productStockField);
             this.cbxProductManager.Controls.Add(this.productPictureBox);
             this.cbxProductManager.Controls.Add(this.productNameField);
@@ -75,9 +77,10 @@
             // 
             // productStockField
             // 
-            this.productStockField.Location = new System.Drawing.Point(180, 165);
+            this.productStockField.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productStockField.Location = new System.Drawing.Point(180, 171);
             this.productStockField.Name = "productStockField";
-            this.productStockField.Size = new System.Drawing.Size(105, 39);
+            this.productStockField.Size = new System.Drawing.Size(105, 29);
             this.productStockField.TabIndex = 18;
             // 
             // productPictureBox
@@ -95,21 +98,21 @@
             // 
             // productNameField
             // 
-            this.productNameField.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productNameField.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productNameField.Location = new System.Drawing.Point(481, 35);
             this.productNameField.Name = "productNameField";
-            this.productNameField.Size = new System.Drawing.Size(194, 33);
+            this.productNameField.Size = new System.Drawing.Size(194, 29);
             this.productNameField.TabIndex = 8;
             // 
             // btnReset
             // 
-            this.btnReset.BackColor = System.Drawing.Color.Chocolate;
+            this.btnReset.BackColor = System.Drawing.Color.Firebrick;
             this.btnReset.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReset.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.Location = new System.Drawing.Point(306, 166);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(169, 39);
+            this.btnReset.Size = new System.Drawing.Size(90, 39);
             this.btnReset.TabIndex = 17;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = false;
@@ -120,20 +123,20 @@
             this.btnAdd.BackColor = System.Drawing.Color.Chocolate;
             this.btnAdd.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(481, 166);
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(402, 166);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(194, 39);
+            this.btnAdd.Size = new System.Drawing.Size(112, 39);
             this.btnAdd.TabIndex = 17;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
             // 
             // productPriceField
             // 
-            this.productPriceField.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productPriceField.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productPriceField.Location = new System.Drawing.Point(481, 83);
             this.productPriceField.Name = "productPriceField";
-            this.productPriceField.Size = new System.Drawing.Size(194, 33);
+            this.productPriceField.Size = new System.Drawing.Size(194, 29);
             this.productPriceField.TabIndex = 7;
             // 
             // label1
@@ -150,14 +153,14 @@
             // productCategoryComboBox
             // 
             this.productCategoryComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.productCategoryComboBox.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productCategoryComboBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productCategoryComboBox.FormattingEnabled = true;
             this.productCategoryComboBox.Items.AddRange(new object[] {
             "Food",
             "Drink"});
             this.productCategoryComboBox.Location = new System.Drawing.Point(481, 126);
             this.productCategoryComboBox.Name = "productCategoryComboBox";
-            this.productCategoryComboBox.Size = new System.Drawing.Size(194, 33);
+            this.productCategoryComboBox.Size = new System.Drawing.Size(194, 29);
             this.productCategoryComboBox.TabIndex = 14;
             // 
             // label5
@@ -215,11 +218,25 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "Product Price: ";
             // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.Color.Firebrick;
+            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.SeaShell;
+            this.btnCancel.Location = new System.Drawing.Point(520, 166);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(154, 39);
+            this.btnCancel.TabIndex = 19;
+            this.btnCancel.Text = "Cancel Order";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            // 
             // AddProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SaddleBrown;
+            this.BackColor = System.Drawing.Color.Sienna;
             this.ClientSize = new System.Drawing.Size(706, 226);
             this.Controls.Add(this.cbxProductManager);
             this.Name = "AddProduct";
@@ -249,6 +266,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblprprice;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnCancel;
 
     }
 }

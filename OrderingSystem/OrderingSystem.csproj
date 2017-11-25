@@ -91,6 +91,12 @@
     </Compile>
     <Compile Include="Global\GlobalClass.cs" />
     <Compile Include="Miscellaneous\Program.cs" />
+    <Compile Include="Ordering\NewOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ordering\NewOrder.Designer.cs">
+      <DependentUpon>NewOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Account\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
@@ -107,6 +113,9 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ordering\NewOrder.resx">
+      <DependentUpon>NewOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -115,6 +124,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -140,6 +150,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>ProgramDatabase.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\ic_perm_identity_white_24dp_2x.png" />
+    <None Include="Resources\ic_add_shopping_cart_white_24dp_2x.png" />
+    <None Include="Resources\ic_history_white_24dp_2x.png" />
+    <None Include="Resources\coffee31.jpg" />
+    <None Include="Resources\coffee21.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
