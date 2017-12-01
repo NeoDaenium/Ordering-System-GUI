@@ -12,7 +12,7 @@ namespace OrderingSystem.Global
     {
         public static void CheckMdiChildren(Form form)
         {
-            foreach (Form frm in MainForm.ActiveForm.MdiChildren)
+            foreach (Form frm in UserMain.ActiveForm.MdiChildren)
             {
                 if (frm.GetType() == form.GetType())
                 {
@@ -20,7 +20,7 @@ namespace OrderingSystem.Global
                     return;
                 }
             }
-            form.MdiParent = MainForm.ActiveForm;
+            form.MdiParent = UserMain.ActiveForm;
             form.Location = new Point(198, 0);
             form.StartPosition = FormStartPosition.CenterParent;
             form.Show();

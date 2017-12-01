@@ -8,3 +8,8 @@ C:\Users\Janda\Source\Repos\Ordering-System-GUI\DatabaseController\bin\Debug\Dat
 C:\Users\Janda\Source\Repos\Ordering-System-GUI\DatabaseController\obj\Debug\DatabaseController.csprojResolveAssemblyReference.cache
 C:\Users\Janda\Source\Repos\Ordering-System-GUI\DatabaseController\obj\Debug\DatabaseController.dll
 C:\Users\Janda\Source\Repos\Ordering-System-GUI\DatabaseController\obj\Debug\DatabaseController.pdb
+C:\Users\Janda\Source\Repos\Ordering-System-GUI2\DatabaseController\bin\Debug\DatabaseController.dll
+C:\Users\Janda\Source\Repos\Ordering-System-GUI2\DatabaseController\bin\Debug\DatabaseController.pdb
+C:\Users\Janda\Source\Repos\Ordering-System-GUI2\DatabaseController\obj\Debug\DatabaseController.csprojResolveAssemblyReference.cache
+C:\Users\Janda\Source\Repos\Ordering-System-GUI2\DatabaseController\obj\Debug\DatabaseController.dll
+C:\Users\Janda\Source\Repos\Ordering-System-GUI2\DatabaseController\obj\Debug\DatabaseController.pdb

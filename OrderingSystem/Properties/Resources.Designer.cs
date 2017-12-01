@@ -103,6 +103,16 @@ namespace OrderingSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ic_history_white_24dp_2x1 {
+            get {
+                object obj = ResourceManager.GetObject("ic_history_white_24dp_2x1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ic_perm_identity_white_24dp_2x {
             get {
                 object obj = ResourceManager.GetObject("ic_perm_identity_white_24dp_2x", resourceCulture);

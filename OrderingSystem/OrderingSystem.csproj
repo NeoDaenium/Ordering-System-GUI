@@ -65,6 +65,12 @@
     <Compile Include="Account\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\AdminControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminControl.Designer.cs">
+      <DependentUpon>AdminControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AddProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,11 +89,23 @@
     <Compile Include="Admin\ProductManagement.Designer.cs">
       <DependentUpon>ProductManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="Miscellaneous\SplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="Miscellaneous\SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\UserMain.Designer.cs">
+      <DependentUpon>UserMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Global\GlobalClass.cs" />
     <Compile Include="Miscellaneous\Program.cs" />
@@ -101,6 +119,9 @@
     <EmbeddedResource Include="Account\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminControl.resx">
+      <DependentUpon>AdminControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\AddProduct.resx">
       <DependentUpon>AddProduct.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,8 +131,11 @@
     <EmbeddedResource Include="Admin\ProductManagement.resx">
       <DependentUpon>ProductManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <EmbeddedResource Include="Account\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\UserMain.resx">
+      <DependentUpon>UserMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ordering\NewOrder.resx">
       <DependentUpon>NewOrder.cs</DependentUpon>
@@ -126,6 +150,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Miscellaneous\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -139,9 +166,7 @@
   <ItemGroup>
     <None Include="Miscellaneous\App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="User\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Database\ProgramDatabase.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
